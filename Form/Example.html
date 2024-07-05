@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p id="myP"></p>
+    <p id="P"></p>
+    <p id="myp"></p>
+    <p id="Myp"></p>
+    <p id="mrP"></p>
+
+    <button onclick="Test()">Testing</button>
+</body>
+<script>
+    
+function Test() {
+    setTimeout(function() {
+        let jachi = ["1", "2", "3", "4", "5",]
+
+        for (let i = 0; i < jachi.length; i++) {
+            document.getElementById("myP").innerHTML = jachi[i]
+            document.getElementById("P").innerHTML = jachi[i].toString()
+            document.getElementById("myp").innerHTML = jachi[i]
+            document.getElementById("Myp").innerHTML = jachi[i]
+            document.getElementById("mrP").innerHTML = jachi[i]
+        }
+    }, 5000)
+}
+</script>
+</html>

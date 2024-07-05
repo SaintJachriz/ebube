@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/" id="form">
+        <div>
+            <label for="Fname">First Name</label>
+            <input type="text" name="Fname" id="Fname">
+        </div>
+        
+        <div>
+            <label for="Lname">Last Name</label>
+            <input type="text" name="Lname" id="Lname">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="pass">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="pass2">Confirm Password</label>
+            <input type="password" name="pass2" id="pass2">
+        </div>
+        <button type="submit">Submit</button>
+
+        <button onclick="Add()">Add file</button>
+    </form>
+</body>
+<script>
+    const Form = document.getElementById("form");
+    const Fname = document.getElementById("Fname");
+    const Lname = document.getElementById("Lname");
+    const password = document.getElementById("pass");
+    const email = document.getElementById("email");
+    const pass2 = document.getElementById("pass2");
+
+    Form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        debugger;
+
+    })
+
+    function Add() {
+        let deploy = true;
+
+        
+    }
+</script>
+</html>
